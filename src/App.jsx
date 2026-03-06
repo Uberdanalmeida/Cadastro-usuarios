@@ -18,6 +18,10 @@ export default function App() {
         </div>
         <button type="submit">Cadastrar</button>
       </form>
+
+      <div className="usuarios-cadastrados">
+        <p>Usuários cadastrados:</p>
+      </div>
     </div>
   )
 }
