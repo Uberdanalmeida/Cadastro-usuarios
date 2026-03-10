@@ -68,7 +68,7 @@ button:hover {
 }
 
 .usuarios-cadastrados {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  background-color: #f5f5f5;
+  padding: 32px;
+  border-radius: 10px;
 }

@@ -36,7 +36,6 @@ export default function App() {
       </form>
 
       <div className="usuarios-cadastrados">
-        <p>Usuários cadastrados:</p>
         {usuarios.map((usuario, index) => (
           <p key={index}>{usuario.nome} - {usuario.email}</p>
         ))}
