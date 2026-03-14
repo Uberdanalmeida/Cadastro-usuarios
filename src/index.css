@@ -74,13 +74,22 @@ button:hover {
 }
 
 span {
-  display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
 
-.lixeira {
-  color: red;
+.usuario{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.lixeira{
   cursor: pointer;
-  font-size: 18px;
+}
+
+.lixeira:hover{
+  color: red;
 }

@@ -60,11 +60,13 @@ export default function App() {
       {usuarios.length > 0 && (
         <div className="usuarios-cadastrados">
           {usuarios.map((usuario, index) => (
-            <p key={index}>
+
+          <div className="usuario" key={index}>
               <span>👤 {usuario.nome}</span>
               <span>✉️ {usuario.email}</span>
               <span className="lixeira" onClick={() => removerUsuario(index)}> 🗑 </span>
-            </p>
+          </div>
+          
           ))}
         </div>
       )}
