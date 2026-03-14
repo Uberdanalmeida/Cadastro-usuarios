@@ -12,6 +12,11 @@ export default function App() {
     setUsuarios([...usuarios, { nome, email, senha }]);
   }
 
+  function removerUsuario(index) {
+    const novaLista = usuarios.filter((usuario, i) => i !== index);
+    setUsuarios(novaLista);
+  }
+
   return (
     <div className="App">
       <h1>Cadastro de Usuários</h1>
@@ -58,7 +63,7 @@ export default function App() {
             <p key={index}>
               <span>👤 {usuario.nome}</span>
               <span>✉️ {usuario.email}</span>
-              <span>🗑</span>
+              <span onClick={() => removerUsuario(index)}> 🗑 </span>
             </p>
           ))}
         </div>
